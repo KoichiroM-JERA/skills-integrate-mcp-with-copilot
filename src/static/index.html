@@ -13,6 +13,25 @@
     </header>
 
     <main>
+      <section id="auth-container">
+        <h3>User Login</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required placeholder="student1" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="••••••••" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div id="auth-status" class="message info">
+          Not logged in. Sign in to perform protected actions.
+        </div>
+        <button id="logout-btn" class="hidden" type="button">Logout</button>
+      </section>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
